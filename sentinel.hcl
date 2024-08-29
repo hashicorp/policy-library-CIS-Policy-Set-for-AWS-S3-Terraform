@@ -1,9 +1,17 @@
-module "report" {
+import "module" "report" {
   source = "./modules/report/report.sentinel"
 }
 
-module "tfresources" {
+import "module" "tfresources" {
   source = "./modules/tfresources/tfresources.sentinel"
+}
+
+import "module" "tfplan-functions" {
+  source = "./modules/tfplan-functions/tfplan-functions.sentinel"
+}
+
+import "module" "tfconfig-functions" {
+  source = "./modules/tfconfig-functions/tfconfig-functions.sentinel"
 }
 
 policy "s3-block-public-access-account-level" {
