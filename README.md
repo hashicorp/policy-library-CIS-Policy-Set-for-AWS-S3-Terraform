@@ -22,3 +22,9 @@ The following CIS standards have equivalent Sentinel policies written for them. 
 - [s3-require-ssl](./docs/policies/s3-require-ssl.md)
 - [s3-enable-object-logging-for-write-events](./docs/policies/s3-enable-object-logging-for-write-events.md)
 - [s3-enable-object-logging-for-read-events](./docs/policies/s3-enable-object-logging-for-read-events.md)
+
+### Minimum Sentinel Version Required
+
+```pre
+0.26.x
+```
