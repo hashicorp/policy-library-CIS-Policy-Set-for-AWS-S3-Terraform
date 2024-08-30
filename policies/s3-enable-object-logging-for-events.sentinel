@@ -13,7 +13,7 @@ import "collection/maps" as maps
 # event_type corresponds the read_write_type for the cloudtrail's event selector.
 # Accepted values are 'WriteOnly' and 'ReadOnly'. The input is validated against
 # the cloudtrail resource's event selector.
-param event_type
+param event_type default "ReadOnly"
 
 # Constants
 
