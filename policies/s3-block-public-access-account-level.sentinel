@@ -6,6 +6,8 @@
 import "tfplan/v2" as tfplan
 import "tfresources" as tf
 import "report" as report
+import "collection" as collection
+import "collection/maps" as maps
 
 # Constants
 const = {
@@ -20,10 +22,10 @@ const = {
 # Functions
 
 is_block_public_access_settings_compliant = func(res) {
-	return res.values[const.ignore_public_acls] is true and
-		res.values[const.restrict_public_buckets] is true and
-		res.values[const.block_public_acls] is true and
-		res.values[const.block_public_policy] is true
+	return maps.get(res.values, const.ignore_public_acls, false) is true and
+		maps.get(res.values, const.restrict_public_buckets, false) is true and
+		maps.get(res.values, const.block_public_acls, false) is true and
+		maps.get(res.values, const.block_public_policy, false) is true
 }
 
 # Variables
