@@ -43,21 +43,21 @@ cloudtrail_resources = planned_resources.type(const.resource_cloudtrail).resourc
 referenced_s3_bucket_names = []
 references_all_s3_buckets = false
 for cloudtrail_resources as _, res {
-	event_selector_block = res[const.values][const.event_selector_block]
+	event_selector_block = maps.get(maps.get(res, const.values, []), const.event_selector_block, [])
 	if event_selector_block is empty {
 		continue
 	}
 
 	for event_selector_block as _, es {
-		if es[const.include_management_events] is true and
-			es[const.read_write_type] is event_type {
+		if maps.get(es, const.include_management_events, false) is true and
+			maps.get(es, const.read_write_type, "") is event_type {
 
-			for es[const.data_resource] as _, data_res {
-				if data_res[const.type] is not const.aws_s3_object {
+			for maps.get(es, const.data_resource, []) as _, data_res {
+				if maps.get(data_res, const.type, "") is not const.aws_s3_object {
 					continue
 				}
 
-				for data_res[const.values] as _, val {
+				for maps.get(data_res, const.values, []) as _, val {
 					if val is const.catch_all_aws_s3_arn {
 						references_all_s3_buckets = true
 						break
