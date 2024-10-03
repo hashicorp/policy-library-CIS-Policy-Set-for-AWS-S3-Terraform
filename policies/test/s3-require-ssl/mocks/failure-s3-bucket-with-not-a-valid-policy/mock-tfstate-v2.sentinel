@@ -1,0 +1,40 @@
+terraform_version = "1.9.6"
+
+outputs = {}
+
+resources = {
+	"aws_caller_identity.current": {
+		"address":        "aws_caller_identity.current",
+		"depends_on":     [],
+		"deposed_key":    "",
+		"index":          null,
+		"mode":           "data",
+		"module_address": "",
+		"name":           "current",
+		"provider_name":  "registry.terraform.io/hashicorp/aws",
+		"tainted":        false,
+		"type":           "aws_caller_identity",
+		"values": {
+			"account_id": "938630459050",
+			"arn":        "arn:aws:sts::938630459050:assumed-role/TfcWorkloadIdentity/terraform-run-7pKaYBhcxmH2p9vn",
+			"id":         "938630459050",
+			"user_id":    "AROA5VCV4F2VJKM47CP77:terraform-run-7pKaYBhcxmH2p9vn",
+		},
+	},
+	"module.s3_bucket.aws_canonical_user_id.this": {
+		"address":        "module.s3_bucket.aws_canonical_user_id.this",
+		"depends_on":     [],
+		"deposed_key":    "",
+		"index":          null,
+		"mode":           "data",
+		"module_address": "module.s3_bucket",
+		"name":           "this",
+		"provider_name":  "registry.terraform.io/hashicorp/aws",
+		"tainted":        false,
+		"type":           "aws_canonical_user_id",
+		"values": {
+			"display_name": "sphtech_infra_cloud+platform-engineering-sandbox",
+			"id":           "940dddf08699af3b980ae4cc3c53bb2934989b1723a25cbb15822caacd70abf5",
+		},
+	},
+}
