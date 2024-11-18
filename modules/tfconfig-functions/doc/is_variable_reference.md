@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: BUSL-1.1
+
 # is_variable_reference
 This function checks if the passed reference is a reference to a variable
 
