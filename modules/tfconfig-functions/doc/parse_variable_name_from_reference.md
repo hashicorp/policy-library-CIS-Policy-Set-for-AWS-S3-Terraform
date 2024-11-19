@@ -1,6 +1,3 @@
-// Copyright (c) HashiCorp, Inc.
-// SPDX-License-Identifier: BUSL-1.1
-
 # parse_variable_name_from_reference
 This function parses the passed reference to return the variable name.
 
