@@ -96,12 +96,12 @@ The documentation for the policy libraries consists of Markdown files within thi
 
 The following CIS standards have equivalent Sentinel policies written for them. These policies get enforced between the `plan` and `apply` phase whenever a run gets queued in TFC/TFE.
 
-- [s3-block-public-access-account-level](./docs/policies/s3-block-public-access-account-level.md)
-- [s3-block-public-access-bucket-level](./docs/policies/s3-block-public-access-bucket-level.md)
-- [s3-require-mfa-delete](./docs/policies/s3-require-mfa-delete.md)
-- [s3-require-ssl](./docs/policies/s3-require-ssl.md)
-- [s3-enable-object-logging-for-write-events](./docs/policies/s3-enable-object-logging-for-write-events.md)
-- [s3-enable-object-logging-for-read-events](./docs/policies/s3-enable-object-logging-for-read-events.md)
+- s3-block-public-access-account-level
+- s3-block-public-access-bucket-level
+- s3-require-mfa-delete
+- s3-require-ssl
+- s3-enable-object-logging-for-write-events
+- s3-enable-object-logging-for-read-events
 
 ### Minimum Sentinel Version Required
 
