@@ -20,15 +20,17 @@ We aim to validate the effectiveness of our policies by collecting diverse user 
 
 ### Policies Included
 
-- s3-block-public-access-account-level ([docs](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/docs/policies/s3-block-public-access-account-level.md) | [code](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/policies/s3-block-public-access-account-level.sentinel))
+- S3 general purpose buckets should have block public access settings enabled([docs](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/docs/policies/s3-block-public-access-account-level.md) | [code](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/policies/s3-block-public-access-account-level.sentinel))
 
-- s3-block-public-access-bucket-level ([docs](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/docs/policies/s3-block-public-access-bucket-level.md) | [code](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/policies/s3-block-public-access-bucket-level.sentinel))
+- S3 general purpose buckets should have block public access settings enabled at a bucket level ([docs](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/docs/policies/s3-block-public-access-bucket-level.md) | [code](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/policies/s3-block-public-access-bucket-level.sentinel))
 
-- s3-enable-object-logging-for-events ([docs](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/docs/policies/s3-enable-object-logging-for-events.md) | [code](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/policies/s3-enable-object-logging-for-events.sentinel))
+- Ensure that Object-level logging for read events is enabled for S3 buckets ([docs](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/docs/policies/s3-enable-object-logging-for-events.md) | [code](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/policies/s3-enable-object-logging-for-events.sentinel))
 
-- s3-require-mfa-delete ([docs](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/docs/policies/s3-require-mfa-delete.md) | [code](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/policies/s3-require-mfa-delete.sentinel))
+- Ensure that Object-level logging for write events is enabled for S3 buckets ([docs](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/docs/policies/s3-enable-object-logging-for-events.md) | [code](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/policies/s3-enable-object-logging-for-events.sentinel))
 
-- s3-require-ssl ([docs](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/docs/policies/s3-require-ssl.md) | [code](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/policies/s3-require-ssl.sentinel))
+- S3 general purpose buckets should have MFA delete enabled ([docs](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/docs/policies/s3-require-mfa-delete.md) | [code](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/policies/s3-require-mfa-delete.sentinel))
+
+- S3 general purpose buckets should require ssl for all requests ([docs](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/docs/policies/s3-require-ssl.md) | [code](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/policies/s3-require-ssl.sentinel))
 
 
 
