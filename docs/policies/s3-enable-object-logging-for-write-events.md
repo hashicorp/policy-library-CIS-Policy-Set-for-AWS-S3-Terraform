@@ -16,7 +16,7 @@
 
 S3 object-level API operations such as GetObject, DeleteObject, and PutObject are called data events. By default, CloudTrail trails don't log data events and so it is recommended to enable Object-level logging for S3 buckets.
 
-This rule is covered by the [s3-enable-object-logging-for-events](../../policies/s3-enable-object-logging-for-events.sentinel) policy with the `event_type` parameter passed as `WriteOnly`.
+This rule is covered by the [s3-enable-object-logging-for-events](https://github.com/hashicorp/policy-library-cis-aws-s3-terraform/blob/main/policies/s3-enable-object-logging-for-events.sentinel) policy with the `event_type` parameter passed as `WriteOnly`.
 
 ## Policy Results (Pass)
 ```bash
